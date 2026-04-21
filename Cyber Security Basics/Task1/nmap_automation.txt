@@ -1,0 +1,51 @@
+import nmap from datetime import datetime 
+def run_scan(target): print(f"[+] Starting scan on {target}...\n") 
+
+# Initialize Nmap scanner 
+scanner = nmap.PortScanner()  
+try: 
+    # Perform SYN scan 
+    scanner.scan(hosts=target, arguments='-sS -sV') 
+ 
+except Exception as e: 
+    print(f"[!] Error: {e}") 
+    return 
+ 
+# Get scan time 
+scan_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
+ 
+report = [] 
+report.append("=== Nmap Automation Scan Report ===") 
+report.append(f"Scan Time: {scan_time}") 
+report.append(f"Target: {target}\n") 
+ 
+# Loop through hosts 
+for host in scanner.all_hosts(): 
+    report.append(f"Host: {host}") 
+    report.append(f"State: {scanner[host].state()}") 
+ 
+    for proto in scanner[host].all_protocols(): 
+        report.append(f"\nProtocol: {proto}") 
+ 
+        ports = scanner[host][proto].keys() 
+ 
+        for port in sorted(ports): 
+            service = scanner[host][proto][port] 
+ 
+            name = service.get('name', 'unknown') 
+            version = service.get('version', '') 
+            product = service.get('product', '') 
+ 
+            report.append( 
+                f"Port: {port} | Service: {name} | Product: {product} | 
+Version: {version}" 
+            ) 
+ 
+    report.append("\n" + "-"*40 + "\n") 
+ 
+# Save report 
+with open("scan_report.txt", "w") as f: 
+    f.write("\n".join(report)) 
+ 
+print("[+] Scan complete! Report saved as scan_report.txt") 
+if name == "main": target = input("Enter target IP or hostname: ") run_scan(target)
