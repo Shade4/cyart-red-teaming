@@ -1,0 +1,53 @@
+1. Fundamentals Red Teaming
+What to Learn:
+
+Core Concepts: Purpose of Red Teaming (simulating adversaries to test defenses), attack lifecycle (reconnaissance, exploitation, persistence), MITRE ATT&CK framework.
+Key Objectives: Understand Red Teaming’s role in improving security through offensive techniques.
+How to Learn:
+
+Watch YouTube tutorials (e.g., TryHackMe Red Team Fundamentals).
+Complete interactive quizzes on Cybrary (free tier, search for Red Team basics).
+
+
+2. Reconnaissance and Information Gathering
+What to Learn:
+
+Reconnaissance Types: Passive (OSINT, WHOIS) and active (port scanning, service enumeration).
+Tools: Nmap (network scanning), Maltego (OSINT), theHarvester (email enumeration).
+How to Learn:
+
+Study OSINT techniques using OSINT Framework.
+Practice active scanning with Nmap in a lab environment.
+
+
+3. Exploitation and Vulnerability Assessment
+What to Learn:
+
+Exploitation Basics: Exploiting vulnerabilities, privilege escalation, payload delivery.
+Tools: Metasploit (exploitation framework), OpenVAS (vulnerability scanner).
+How to Learn:
+
+Follow Metasploit Unleashed (free course).
+Use OpenVAS to scan for vulnerabilities.
+
+
+4. Post-Exploitation and Persistence
+What to Learn:
+
+Post-Exploitation: Data exfiltration, lateral movement, maintaining access.
+Tools: Mimikatz (credential dumping), Netcat (backdoors), PowerShell (scripting).
+How to Learn:
+
+Study post-exploitation with TryHackMe’s Red Team Track (free rooms available).
+Practice persistence techniques in a controlled lab.
+
+
+5. Reporting and Red Team Operations
+What to Learn:
+
+Reporting: Documenting findings, attack paths, and recommendations.
+Red Team Operations: Planning, scoping, and rules of engagement (RoE).
+How to Learn:
+
+Use SANS Red Team report templates.
+Study RoE from Red Team Field Manual excerpts online.

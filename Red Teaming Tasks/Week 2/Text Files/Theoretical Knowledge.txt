@@ -1,0 +1,46 @@
+1. Advanced Threat Analysis
+What to Learn:
+Core Concepts:
+Threat Modeling: Master STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) to identify threats by mapping assets, entry points, and trust boundaries. Example: Apply STRIDE to a web application to identify spoofing risks in user authentication.
+MITRE ATT&CK Framework: Understand tactics (e.g., Initial Access, Execution) and techniques (e.g., T1059 - Command and Scripting Interpreter) to analyze adversary behaviors and align with defensive measures. Example: Map a phishing attack to T1566.
+Advanced Attack Vectors: Study Advanced Persistent Threats (APTs) for long-term targeted attacks, supply chain attacks for third-party compromise, and zero-day exploits for undisclosed vulnerabilities. Example: Analyze the SolarWinds attack for supply chain tactics.
+
+Key Objectives: Build skills to model threats, map attacks to MITRE ATT&CK, and understand sophisticated attack vectors for proactive defense.
+How to Learn:
+Explore MITRE ATT&CK via attack.mitre.org and use the ATT&CK Navigator to visualize attack chains.
+Analyze the SolarWinds 2020 breach using reports from KrebsOnSecurity or Mandiant to understand supply chain attack mechanics.
+Create a STRIDE-based threat model for a sample web application using OWASP Threat Dragon.
+Study zero-day exploits via Exploit-DB to understand detection challenges.
+
+
+2. Security Frameworks in Depth
+What to Learn:
+Core Concepts:
+NIST Cybersecurity Framework (CSF): Dive into the five functions: Identify (asset inventory, risk assessment), Protect (access controls, encryption), Detect (monitoring, anomaly detection), Respond (incident handling, communication), Recover (restoration, lessons learned). Example: Use Identify to catalog critical assets in a mock organization.
+ISO 27001 Controls: Explore the 114 controls across 14 domains (e.g., A.12.4 - Logging and Monitoring, A.14.2 - Security in Development). Learn to implement controls for compliance. Example: Apply A.12.3 (Backup) to mitigate ransomware risks.
+Framework Application: Map controls to real-world scenarios, such as ransomware mitigation (e.g., NIST CSF’s Recover for backup restoration, ISO 27001’s A.8.2.1 for data classification).
+
+Key Objectives: Apply NIST CSF and ISO 27001 to design and evaluate cybersecurity programs tailored to organizational needs.
+How to Learn:
+Review NIST CSF guides from NIST.gov and study implementation tiers (Partial, Risk-Informed, Repeatable, Adaptive).
+Explore ISO 27001 using Advisera checklists and map controls to a ransomware scenario.
+Cross-reference CIS Controls with NIST CSF to identify overlaps (e.g., CIS Control 3 vs. NIST Protect).
+Analyze the WannaCry ransomware case via CISA reports to map NIST CSF functions to response actions.
+
+
+3. Incident Response Fundamentals
+What to Learn:
+Incident Lifecycle: Preparation, Detection, Containment, Eradication, Recovery.
+Key Components: Role of playbooks, SOC workflows, and incident prioritization.
+How to Learn:
+Study SANS Incident Response papers.
+Use Let’s Defend for simulated incident response scenarios.
+
+
+4. Risk Management Advanced Concepts
+What to Learn:
+Concepts: Quantitative vs. qualitative risk assessment, Business Impact Analysis (BIA).
+Key Objectives: Quantify risks and assess business impacts effectively.
+How to Learn:
+Use FAIR Institute guides for risk quantification.
+Calculate Annualized Loss Expectancy (ALE) using Google Sheets.
